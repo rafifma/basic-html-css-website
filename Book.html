@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <div id="navigator"></div>
+    <title>Booking Formular</title>
+</head>
+<body>
+    <h1>- Booking Form -</h1>
+    <fieldset><div id="form"><legend>Please fill in this form</legend>
+        <label for="name">Name: </label>
+            <input type="text" id="name">
+        <label for="phone">Phone: </label>
+            <input type="text" id="phone" placeholder="017xxxxxxx">
+
+        <form action="">
+            <label for="date">Select your appointment date: </label>
+            <input type="date" id="date" name="date">
+        </form>
+        <form action="">
+            <label for="time">Select your appointment time: </label>
+            <input type="time" id="time" name="time">
+        </form>
+        <label for="service">Select service: </label><br>
+            <select name="service" id="service">
+                <option value="select" class="pls">Please select : </option>
+                <option value="Regular Cut"> Regular Cut</option>
+                <option value="Kids Cut"> Kids Haircut</option>
+                <option value="Beard Trim"> Beard Trim</option>
+                <option value="shaving"> Shaving </option>
+                <option value="coloring"> Hair Coloring</option>
+                <option value="wash"> Hair Wash</option>
+            
+            </select>      
+            
+            <p>Service Price:: </p>
+            <ul id="servicesPrice"></ul>
+            
+            
+            <a href="/Barber/barber.html">
+                <input type="submit" onclick="validateForm()">
+            </a>
+            <input type="checkbox" id="checkbox">Is the data entered correctly?
+        </div>
+    </fieldset>
+    
+    
+
+    <script src="/Books.js"></script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+*, html {
+    scroll-behavior: smooth;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+*{
+    font-family: 'Poppins' , sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #e7e9e7;
+
+}
+
+/* NAVIGATION SEITE */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    background: black;
+    padding: 6px 16px;
+    height: 100%;
+    box-shadow: 5px 0 30px rgba(0, 0, 0, 1);
+    transition: all .5s ease;
+}
+
+.sidebar.active {
+    width: 240px;
+}
+
+.sidebar .logocontent .logo {
+    display: flex;
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    margin-left: 5px;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+
+}
+
+.sidebar.active .logocontent .logo {
+    opacity: 1;
+}
+
+.sidebar .logocontent .logo .logoname {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: #b3b3b3;
+    left: 50%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-50%);
+}
+
+.sidebar.active #btn {
+    left: 85%;
+}
+
+.sidebar .src {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sidebar .src input{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 50px);
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: rgba(210,73,77,255);
+    padding-left: 50px;
+    font-size: 15px;
+    color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+}
+
+.sidebar .src .bx-search{
+    position: absolute;
+    z-index: 99;
+    font-size: 22px;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.sidebar .src .bx-search:hover {
+    color: rgba(210,73,77,255);
+    border-radius: 10px;
+}
+
+.sidebar .src .bx-search:hover ~ input {
+    background: #fff;
+}
+
+.sidebar i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.sidebar .nav {
+    margin-top: 20px;
+}
+
+
+.sidebar .nav li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    line-height: 50px;   
+}
+
+.sidebar .nav li a {
+    color: #b3b3b3;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav li:hover {
+    color: #b3b3b3;
+    background: #e7e9f5;
+    border-radius: 20px;
+}
+
+.sidebar .linkname {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.active .linkname {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar .nav li .tooltip {
+    position: absolute;
+    left: 130px;
+    top: 0;
+    transform: translate(-45%, -50%);
+    border-radius: 10px;
+    height: 35px;
+    width: 150px;
+    background: #fff;
+    line-height: 35px;
+    text-align: center;
+    font-size: 13px;
+    display: block;
+    color: #242424;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active .nav li .tooltip {
+    display: none;
+
+}
+
+
+.sidebar .nav li:hover .tooltip {
+    opacity: 1;
+    top: 50%;
+
+}
+
+
+
+
+/* Hintergrund */
+body {
+    height: 100vh;
+    display: absolute;
+    background-image: url(/images/bild11.jpg);
+    background-size: 70%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: white;
+    
+}
+
+/*Booking Button*/
+.button{
+    position: relative;
+    left: 40.2%;
+    top: 47%;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border: none;
+    width: 20%;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 5px 2px 10px rgba(45, 85, 255),
+    -5px -2px 10px rgba(255, 148, 120);
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: greenyellow;
+    text-decoration: none;
+}
+
+/*Services*/
+.mserv {
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 150%;
+    background-image: url(/images/bg12.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    letter-spacing: 1px;
+}
+
+.serv li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 6%;
+    color: white;
+    list-style-type: none;
+}
+
+/*Pricelist Tabelle*/
+.tabel1 {
+    height: 50vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120%;
+    
+}
+
+.table2 {
+    padding-left:100px;
+      margin-left:30px;   
+      font-size:1em;
+      color:rgb(0, 0, 0); 
+      text-align:right;
+      border: 8px ridge rgb(55, 194, 111);
+      border-spacing:11px;
+      
+      border-collapse: collapse;
+}
+
+tr {
+    background-color: blanchedalmond;
+}
+
+th {
+    background-color: khaki;
+}
+
+.tser {
+    background-color: blanchedalmond;
+}
+
+td:hover
+  { 
+     background-color:#AAF;
+	    
+}
+
+
+/*   PRODUCT   */
+.mprod {
+    height: 70vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120%;
+}
+
+.lipro {
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.proimg {
+    box-shadow: 1px 5px 10px;
+    border-radius: 10px;
+}
+
+/*  About Us & Our Team flex */
+.AOcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about {
+    background-color: rgba(239, 239, 240, 0.8);
+    border-radius: 80px;
+    border-top-left-radius: 0px;
+}
+
+
+/*  Testimonial  */
+.testi {
+    position: relative;
+	background: none;
+    margin-left: 50px;
+
+}
+
+.testi figure {
+    top: auto;
+	left: 27.5%;
+	z-index: 0;
+	position: absolute;
+	width:500px;
+	background-color: white;
+	animation: wechseln 4s infinite;
+}
+
+@keyframes wechseln {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.testi figure .r {
+
+	animation-delay: 3s;
+}
+.testi figure .m {
+
+	animation-delay: 3s;
+}
+
+figure img {
+    border-radius: 10px;
+	max-width:888px;
+}
+
+#testimonial {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: transparent;
+}
+
+
+/*  Contact Us & Location  */
+.CLcontainer {
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.cont {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.loc {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* footer */
+.foot {
+    text-decoration: none;
+    color: aqua;
+}
+
+footer {
+    width: 1fr;
+    background-image: linear-gradient(white, black);
+    padding: 5px;
+    margin: -10px;
+    color: aqua;
+}

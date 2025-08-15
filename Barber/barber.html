@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestBerShop</title>
+    <link rel="stylesheet" href="bstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <div id="geoLocation"></div>
+    
+</head>
+<body onload="getLocation()">
+    <!--------navigation------->
+    <div class="sidebar">
+        <div class="logocontent">
+            <div class="logo">
+                <i class='bx bx-store'></i>
+                <div class="logoname">BestBerShop</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+
+        <div class="src">
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Search...">
+        </div>
+    <!--navigation list-->
+        <ul class="nav">
+                <li>
+                    <a href="#">
+                    <i class='bx bx-home-alt-2'></i>
+                    <span class="linkname">Home</span>
+                    </a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="#book">
+                    <i class='bx bx-book-content'></i>
+                    <span class="linkname">Book</span>
+                    </a>
+                    <span class="tooltip">Book</span>
+                </li>
+                <li>
+                    <a href="#services">
+                    <i class='bx bx-user'></i>
+                    <span class="linkname">Service</span>
+                    </a>
+                    <span class="tooltip">Service</span>
+                </li>
+                <li>
+                    <a href="#pricelist">
+                    <i class='bx bx-dollar'></i>
+                    <span class="linkname">Price List</span>
+                    </a>
+                    <span class="tooltip">Price List</span>
+                </li>
+                <li>
+                    <a href="#product">
+                    <i class='bx bxl-product-hunt'></i>
+                    <span class="linkname">Product</span>
+                    </a>
+                    <span class="tooltip">Product</span>
+                </li>
+                <li>
+                    <a href="#aboutus">
+                    <i class='bx bxs-user-detail'></i>
+                    <span class="linkname">About Us</span>
+                    </a>
+                    <span class="tooltip">About Us</span>
+                </li>
+                <li>
+                    <a href="#ourteam">
+                    <i class='bx bxl-microsoft-teams'></i>
+                    <span class="linkname">Our Team</span>
+                    </a>
+                    <span class="tooltip">Our Team</span>
+                </li>
+                <li>
+                    <a href="#testimonial">
+                    <i class='bx bx-message-dots'></i>
+                    <span class="linkname">Testimonials</span>
+                    </a>
+                    <span class="tooltip">Testimonials</span>
+                </li>
+                <li>
+                    <a href="#contactus">
+                    <i class='bx bxs-contact'></i>
+                    <span class="linkname">Contact Us</span>
+                    </a>
+                    <span class="tooltip">Contact Us</span>
+                </li>  
+        </ul>
+    </div>
+
+    <section>
+            <!-- Landing Page -->
+        <div class="landingpage">
+            <div class="leftsec">
+                <div class="textbox">
+                    <h1>Come in for a haircut, <br> leave with a new outlook <br>
+                         our barbershop is more than just a place for grooming, <br>
+                          it's a space for transformation and self-care.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consectetur 
+                    explicabo quod eligendi totam adipisci tempore
+                    </p>
+                    
+                    <!--booking button-->
+                    <div class="button">
+                        <a id="book" href="/Book.html">
+                            <button>Click here to Book</button>
+                        </a>
+                    </div>     
+                </div>
+            </div>
+            <div class="rightsec">
+                <img src="/images/bababa.jpeg" alt="" class="imgright">
+            </div>
+       </div>
+    </section>
+
+    <!--service-->
+    <div class="servicepage">
+        <div class="servicecont">
+            <center class="mserv"><h2 id="services">- SERVICES -</h2>
+                <h4>Please select the service according to what you want</h4>
+                <div style="text-align: center;">
+                    <ul class="serv">
+                        <li class="haircut">
+                            <img src="/images/haircut.png" alt="">
+                        </li>
+                        <li class="coloring">
+                            <img src="/images/coloring.png" alt="">
+                        </li>
+                        <li class="shaving">
+                            <img src="/images/shaving.png" alt="">
+                        </li>
+                        <li class="smooting">
+                            <img src="/images/smoothing2.png" alt="">
+                        </li>
+                        <li class="others">
+                            <img src="/images/smoothing.png" alt="">
+                        </li>
+                    </ul>
+                </div> 
+            </center>
+        </div>
+    </div>
+
+    <!--price list-->
+    <center class="tabel1"><h2 id="pricelist" style="text-align: center;">- PRICELIST -</h2>
+        <center><div>
+            <table style="width:30%;" border="1" class="table2">
+                <thead style="text-align: center;">
+                    <tr style="text-align: center;" class="tup">
+                        <th class="tser">SERVICE</th>
+                        <th>Normal</th>
+                        <th>Student</th>
+                    </tr>
+                </thead>
+                <tbody style="text-align: center;">
+                    <tr>
+                        <th>Regular Haircut</th>
+                        <td>10€</td>
+                        <td>8€</td>
+                    </tr>
+                    <tr>
+                        <th>Kids Haircut</th>
+                        <td colspan="2" style="text-align: center;">8€</td>
+                        
+                    </tr>
+                    <tr>
+                        <th>Beard Trim</th>
+                        <td>10€</td>
+                        <td>8€</td>
+                    </tr>
+                    <tr>
+                        <th>Shaving</th>
+                        <td>10€</td>
+                        <td>8€</td>
+                    </tr>
+                    <tr>
+                        <th>Hair Coloring</th>
+                        <td>15€</td>
+                        <td>8€</td>
+                    </tr>
+                    <tr>
+                        <th>Hair Wash</th>
+                        <td>5€</td>
+                        <td>3€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </center>
+    </center>
+
+    <!-- Product -->
+    <center class="mprod"><main>
+        <div id="product">
+        <h2>- OUR PRODUCT -</h2>
+        <li class="lipro"> <h4>Pomade Hair Styling</h4>
+            <img src="/images/suavecito.webp" alt="Pomade" style="width: 30%;" class="proimg">
+            <p>14,99€</p>
+            <input type="submit" value="BUY!!">
+            <a href="#product" id="SeeProduct" onclick="openNewWindow()">See all >></a>
+        </li>
+        </div>
+    </main></center>
+
+    <!-- about us -->
+    <div class="AOcontainer">
+        <main class="about">
+            <center><div id="aboutus">
+                <h2>- About Us -</h2>
+                <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam repellendus 
+                    <var>cumque cupiditate quae placeat facilis inventore? Ab cum temporibus quisquam saepe</var> 
+                    <cite>reprehenderit. Illo iusto quaerat veritatis ad ea eos.</cite>
+                    <samp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum placeat, iusto inventore omnis ab sequi porro numquam impedit. </samp>
+                    <strong>Sed quas rem ea harum placeat a itaque magni vel beatae quos.lorem</strong>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae non sapiente similique nam obcaecati nisi autem, illo voluptatem, 
+                    facere totam asperiores rerum libero, esse quidem quos. Ipsum expedita nemo tempora!  
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis enim nihil nostrum incidunt. Impedit quod sapiente, esse corporis, saepe consequuntur similique molestias labore temporibus, vitae est in modi ab?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempora sint maiores quidem incidunt consequatur ea corrupti voluptas quam earum voluptatem cum facilis natus, illum hic harum nihil reprehenderit veniam.
+                    </p>
+
+            </div></center>
+        </main>
+
+        <!--    Our Team   -->
+        <main class="team">
+            <center><div id="ourteam">
+                <h2>- Our Team -</h2>
+                <dd>meet our team!</dd>
+                <iframe width="480" height="360" src="https://www.youtube.com/embed/DC-RmxW-V7U" frameborder="0"></iframe>
+            </div></center>
+        </main>
+    </div>
+
+    <!--    Testimonial  -->        
+    <center><div id="testimonial">
+        <h2>- Testimonial and Recent Customers -</h2>
+        <div class="testi">
+            <figure> <img src="/images/muller.jpeg" alt="" width="60%" class="m">
+                <figcaption>Müller sagt Danke</figcaption>
+            </figure>
+            <figure> <img src="/images/ronaldo.webp" alt="" width="60%" class="r">
+                <figcaption>Ronaldo says thank you</figcaption>
+            </figure>
+        </div> 
+    </div></center>
+
+    <!--    Contact Us    -->    
+    <div class="CLcontainer">
+        <main class="cont">
+            <center>
+                <div id="contactus">
+                <h2>Contact Us</h2>
+                <h3>Submit your complaints and problems to us, we are happy to hear your complaints</h3>
+
+                <label for="name">Name: </label>
+                <input type="text" id="name">
+
+                <label for="telp">Phone: </label>
+                <input type="text" id="telp" placeholder="Ex. 017xxxxxx">
+
+                <label for="email">Email: </label>
+                <input type="text" id="email" placeholder="Ex. maxmustermann@gmail.com"><br><br>
+
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+
+                <div>
+                    <input type="submit" id="submit" value="Send!">
+                </div>
+
+                </div>
+            </center>
+        </main>
+        <br><br><br><br>
+
+        <main class="loc"><center><div id="location">
+            <h2>You can find us here!!!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1272.2236702466591!2d6.628309348557287!3d49.76748438578592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47957cc08186025d%3A0x66c5bd3a5c5fe814!2sMensa%20Schneidershof!5e0!3m2!1sen!2sde!4v1668040277669!5m2!1sen!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div></center></main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyrights © 2023 BestBerShop</p>
+    </footer>
+
+
+
+
+    <script src="bskript.js"></script>
+</body>
+</html>

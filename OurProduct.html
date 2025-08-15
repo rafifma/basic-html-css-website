@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Product</title>
+    <link rel="stylesheet" href="/OurProductStyle.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Our Product</h1>
+      <nav>
+        <ul>
+          <li><a href="/Barber/barber.html">Home</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+      <section id="MyProduct">
+        <article>
+          <h3>Product 1</h3>
+          <img src="/images/suave.jpg" alt="Produk 1" />
+          <p>Price: 10€</p>
+          <button id="buy-now1" onclick="addToCart('Product 1', 10)">Buy Now!!!</button>
+        </article>
+        <article>
+          <h3>Product 2</h3>
+          <img src="/images/Pomade1.jpg" alt="Produk 2" />
+          <p>Price: 15€</p>
+          <button id="buy-now2" onclick="addToCart('Product 2', 15)">Buy Now!!!</button>
+        </article>
+        <article>
+          <h3>Product 3</h3>
+          <img src="/images/Pomade2.jpg" alt="Produk 3" />
+          <p>Price: 15€</p> 
+          <button id="buy-now3" onclick="addToCart('Product 3', 15)">Buy Now!!!</button>
+        </article>
+        <article>
+          <h3>Product 4</h3>
+          <img src="/images/Pomade3.jpg" alt="Produk 4" />
+          <p>Price: 15€</p>
+          <button id="buy-now4" onclick="addToCart('Product 4', 15)">Buy Now!!!</button>
+        </article>
+        <article>
+          <h3>Product 5</h3>
+          <img src="/images/HairOil.jpg" alt="Produk 5" />
+          <p>Price: 15€</p>
+          <button id="buy-now5" onclick="addToCart('Product 5', 15)">Buy Now!!!</button>
+        </article>
+        <article>
+          <h3>Product 6</h3>
+          <img src="/images/shampoo.jpg" alt="Produk 6" />
+          <p>Price: 8€</p>
+          <button id="buy-now6" onclick="addToCart('Product 6', 8)">Buy Now!!!</button>
+        </article>
+
+        <!-- total product and price in cart -->
+        <article>
+            <div id="cart">
+                <span>Shopping Cart: <span id="cart-counter"></span></span>
+            </div>
+
+            <div id="TotalPrice">
+              <span>Total Price: <span id="TotalPrice-counter">0.00 </span>€</span>
+          </div>
+        </article>
+        <article>
+          <div id="cart-items"> </div>
+        </article>
+        <article>
+          <button>Checkout!!!</button>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyrights © 2023 BestBerShop Products</p>
+    </footer>
+
+    
+    <script src="/OurProductScript2.js"></script>
+  </body>
+</html>
